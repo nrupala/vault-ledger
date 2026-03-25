@@ -8,7 +8,8 @@ import {
   X,
   Shield,
   Download,
-  Lock
+  Lock,
+  BarChart3
 } from 'lucide-react';
 import { useTheme, Theme } from './ThemeProvider';
 import { useVault } from '@vault/core';
@@ -30,6 +31,7 @@ export function AppShell({ children, activeTab, onTabChange }: AppShellProps) {
 
   const navItems = [
     { id: 'ledger' as ActiveTab, label: 'Ledger', icon: Wallet, color: 'text-amber-500' },
+    { id: 'analytics' as ActiveTab, label: 'Analytics', icon: BarChart3, color: 'text-orange-500' },
     { id: 'calendar' as ActiveTab, label: 'Calendar', icon: Calendar, color: 'text-rose-500' },
     { id: 'about' as ActiveTab, label: 'About', icon: Info, color: 'text-primary' },
   ];

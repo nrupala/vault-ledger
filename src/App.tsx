@@ -4,6 +4,7 @@ import { Shield, Lock, KeyRound, Plus, Github, Heart, AlertTriangle } from 'luci
 import { ThemeProvider } from './components/ThemeProvider';
 import { useVault, VaultProvider } from '@vault/core';
 import { LedgerApp } from './components/LedgerApp';
+import { AnalyticsApp } from './components/AnalyticsApp';
 import { CalendarApp } from './components/CalendarApp';
 import { AboutApp } from './components/AboutApp';
 import { AppShell } from './components/AppShell';
@@ -274,7 +275,7 @@ function VaultManager({ onUnlock }: { onUnlock: () => void }) {
 
 function MainApp() {
   const { activeVault, encryptionKey, isLocked } = useVault();
-  const [activeTab, setActiveTab] = useState<'ledger' | 'calendar' | 'about'>('ledger');
+  const [activeTab, setActiveTab] = useState<'ledger' | 'analytics' | 'calendar' | 'about'>('ledger');
 
   if (isLocked || !activeVault || !encryptionKey) {
     return <VaultManager onUnlock={() => { }} />;
@@ -291,6 +292,7 @@ function MainApp() {
         className="h-full"
       >
         {activeTab === 'ledger' && <LedgerApp vaultId={activeVault.id} encryptionKey={encryptionKey} />}
+        {activeTab === 'analytics' && <AnalyticsApp vaultId={activeVault.id} encryptionKey={encryptionKey} />}
         {activeTab === 'calendar' && <CalendarApp vaultId={activeVault.id} encryptionKey={encryptionKey} />}
         {activeTab === 'about' && <AboutApp />}
       </motion.div>
