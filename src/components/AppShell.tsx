@@ -10,7 +10,8 @@ import {
   Download,
   Upload,
   Lock,
-  BarChart3
+  BarChart3,
+  FileText
 } from 'lucide-react';
 import { useTheme, Theme } from './ThemeProvider';
 import { useVault, useItems } from '@/lib/core';
@@ -32,10 +33,14 @@ export function AppShell({ children, activeTab, onTabChange }: AppShellProps) {
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
-  const handleImport = async (format: 'json' | 'text' | 'ics') => {
+  const handleImport = async (format: 'json' | 'text' | 'ics' | 'csv') => {
     const input = document.createElement('input');
     input.type = 'file';
-    input.accept = format === 'json' ? '.json' : format === 'ics' ? '.ics' : '.txt,.md';
+    if (format === 'json') input.accept = '.json';
+    else if (format === 'ics') input.accept = '.ics';
+    else if (format === 'csv') input.accept = '.csv';
+    else input.accept = '.txt,.md';
+
     input.onchange = async (e: any) => {
       const file = e.target.files[0];
       if (!file) return;
@@ -150,6 +155,13 @@ export function AppShell({ children, activeTab, onTabChange }: AppShellProps) {
                   className="text-left text-xs py-1.5 hover:text-primary transition-colors flex items-center gap-2 disabled:opacity-50"
                 >
                   <Upload className="w-3.5 h-3.5" /> Import JSON
+                </button>
+                <button
+                  disabled={importing}
+                  onClick={() => handleImport('csv')}
+                  className="text-left text-xs py-1.5 hover:text-primary transition-colors flex items-center gap-2 disabled:opacity-50"
+                >
+                  <FileText className="w-3.5 h-3.5" /> Import CSV
                 </button>
                 <button
                   disabled={importing}
