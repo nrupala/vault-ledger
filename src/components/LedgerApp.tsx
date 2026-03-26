@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Plus, Download, Upload, TrendingDown, TrendingUp, Wallet, Tag, FileText, Search } from 'lucide-react';
-import { useItems, type DecryptedItem } from '@vault/core';
+import { useItems, type DecryptedItem } from '@/lib/core';
 import { format } from 'date-fns';
 import Papa from 'papaparse';
 
@@ -48,7 +48,7 @@ export function LedgerApp({ vaultId, encryptionKey }: LedgerAppProps) {
         ...item,
         payload: item.payload as ExpensePayload
       }))
-      .sort((a, b) => a.createdAt - b.createdAt); // Order by creation for standing balance
+      .sort((a: any, b: any) => a.createdAt - b.createdAt); // Order by creation for standing balance
 
     let runningBalance = 0;
     return list.map((item: DecryptedItem & { payload: ExpensePayload }) => {

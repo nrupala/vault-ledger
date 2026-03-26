@@ -12,7 +12,7 @@ import {
   BarChart3
 } from 'lucide-react';
 import { useTheme, Theme } from './ThemeProvider';
-import { useVault } from '@vault/core';
+import { useVault } from '@/lib/core';
 
 export type ActiveTab = 'notes' | 'tasks' | 'habits' | 'analytics' | 'calendar' | 'ledger' | 'about';
 
