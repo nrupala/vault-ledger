@@ -12,6 +12,8 @@
     "test": "vitest run",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
     "electron:build": "npm run build && electron-builder",
     "electron:dist:win": "npm run build && electron-builder --win",
@@ -62,6 +64,7 @@
     "typescript": "^5.9.3",
     "vite": "^6.4.1",
     "vite-plugin-pwa": "^1.2.0",
+    "gh-pages": "^6.3.0",
     "vitest": "^4.1.0",
     "wait-on": "^8.0.5"
   },
