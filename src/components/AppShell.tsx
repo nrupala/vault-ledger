@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   CheckSquare,
@@ -12,10 +12,12 @@ import {
   Lock,
   BarChart3,
   Heart,
-  FileText
+  FileText,
+  Mic,
+  MicOff
 } from 'lucide-react';
 import { useTheme, Theme } from './ThemeProvider';
-import { useVault, useItems } from '@/lib/core';
+import { useVault, useItems, useVoiceCommands, type ParsedCommand } from '@/lib/core';
 
 export type ActiveTab = 'notes' | 'tasks' | 'habits' | 'analytics' | 'calendar' | 'ledger' | 'about';
 
@@ -29,8 +31,21 @@ export function AppShell({ children, activeTab, onTabChange }: AppShellProps) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const { activeVault, lockVault, encryptionKey } = useVault();
-  const { importData } = useItems(activeVault?.id, encryptionKey);
+  const { importData, createItem } = useItems(activeVault?.id, encryptionKey);
   const [importing, setImporting] = useState(false);
+
+  const handleVoiceCommand = useCallback(async (cmd: ParsedCommand) => {
+    if (cmd.intent === 'unknown') return;
+    try {
+      if (cmd.intent === 'task') await createItem('task', { title: cmd.data.title, status: 'todo' });
+      else if (cmd.intent === 'note') await createItem('note', { content: cmd.data.content });
+      else if (cmd.intent === 'expense') await createItem('expense', { amount: cmd.data.amount, description: cmd.data.description, classification: 'need' });
+      else if (cmd.intent === 'habit') await createItem('habit', { title: cmd.data.title });
+      alert(`Voice Command Success: Added ${cmd.intent}`);
+    } catch (err: any) { alert(`Voice Command Failed: ${err.message}`); }
+  }, [createItem]);
+
+  const { isListening, lastTranscript, startListening } = useVoiceCommands(handleVoiceCommand);
 
   const toggleSidebar = () => setIsSidebarOpen(!isSidebarOpen);
 
@@ -219,8 +234,40 @@ export function AppShell({ children, activeTab, onTabChange }: AppShellProps) {
           >
             <Menu className="w-5 h-5 text-foreground" />
           </button>
-          <h1 className="text-xl font-semibold tracking-tight capitalize">{activeTab}</h1>
+          <div className="flex-1">
+             <h1 className="text-xl font-semibold tracking-tight capitalize">{activeTab}</h1>
+          </div>
+
+          <div className="flex items-center gap-2">
+            {isListening && (
+              <motion.div 
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="hidden sm:flex items-center gap-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-[10px] font-bold text-primary animate-pulse"
+              >
+                <div className="w-1.5 h-1.5 bg-primary rounded-full" />
+                LISTENING: {lastTranscript || '...'}
+              </motion.div>
+            )}
+            <button
+              onClick={startListening}
+              className={`p-2.5 rounded-full transition-all ${isListening ? 'bg-red-500 text-white animate-bounce' : 'bg-primary/10 text-primary hover:bg-primary/20'}`}
+              title="Voice Command (Hands-Free)"
+            >
+              {isListening ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
+            </button>
+          </div>
         </header>
+
+        {isListening && (
+          <div className="md:hidden fixed top-20 left-4 right-4 z-50 p-4 bg-primary text-white rounded-2xl shadow-2xl flex items-center gap-4 animate-in slide-in-from-top-4">
+            <Mic className="w-6 h-6 animate-pulse" />
+            <div className="flex-1">
+              <p className="text-[10px] font-black uppercase opacity-70">Voice Active</p>
+              <p className="text-sm font-bold truncate">{lastTranscript || 'Waiting for command...'}</p>
+            </div>
+          </div>
+        )}
 
         {/* Scrollable content with enough bottom clearance for mobile nav */}
         <div className="flex-1 overflow-y-auto p-4 md:p-8 pb-[calc(5rem+env(safe-area-inset-bottom))] md:pb-8 relative overflow-x-hidden">
