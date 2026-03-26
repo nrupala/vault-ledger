@@ -87,10 +87,10 @@ function VaultManager({ onUnlock }: { onUnlock: () => void }) {
         >
           <div className="flex flex-col items-center mb-8">
             <div className="p-4 bg-primary/10 rounded-full mb-4">
-              <Shield className="w-10 h-10 text-primary" />
+              <Shield className="w-10 h-10 text-blue-500" />
             </div>
-            <h1 className="text-2xl font-bold tracking-tight">Vault Tracker</h1>
-            <p className="text-muted-foreground text-sm mt-1">Zero-Trust Encrypted Workspace</p>
+            <h1 className="text-2xl font-bold tracking-tight">Vault Ledger</h1>
+            <p className="text-muted-foreground text-sm mt-1">Standalone Secure Ledger & Finance</p>
             <span className="text-[10px] text-muted-foreground/40 font-mono mt-2 uppercase tracking-widest">v1.1.0 Mobile + Data Import Ed.</span>
           </div>
 
@@ -230,10 +230,10 @@ function VaultManager({ onUnlock }: { onUnlock: () => void }) {
         >
           <div className="bg-card/50 backdrop-blur-sm border border-border p-6 rounded-2xl space-y-3">
             <h3 className="font-bold text-lg flex items-center gap-2">
-              <Shield className="w-5 h-5 text-primary" /> Security Model
+              <Shield className="w-5 h-5 text-blue-500" /> Security Model
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              VaultTracker uses **AES-256-GCM** encryption locally in your browser. Your data never leaves your device unencrypted. Zero-trust, zero-knowledge, and 100% private.
+              Vault Ledger uses **AES-256-GCM** encryption locally in your browser. Your financial data never leaves your device unencrypted. Zero-trust, zero-knowledge, and 100% private.
             </p>
           </div>
 
