@@ -19,6 +19,18 @@ Experience the full suite or use focused mini-apps for specific workflows:
 - **🔄 Universal Data Import**: Seamlessly import data from **JSON**, **Plain Text**, and **iCalendar (.ics)** formats directly into your encrypted vaults.
 - **🔢 Version Tracking**: Official versioning now visible in-app (v1.1.0).
 
+## 🛡️ The Trust Manifest: Why Vault Tracker?
+
+In an era of "Privacy Theater," Vault Ledger is built on **Absolute Privacy by Architecture**. We don't ask for your trust; we make it mathematically irrelevant.
+
+### 💎 Our USP: Unbreakable Sovereignty
+1. **Zero-Knowledge by Default**: We never see your password, your keys, or your data. Encryption happens on *your* CPU, before storage.
+2. **The "Unbreakable Blob" Philosophy**: Even when synced to the cloud, your data remains an **AES-256-GCM encrypted blob**—indistinguishable from random noise to outsiders.
+3. **No Account, No Tracking**: No sign-ups, no cookies, no analytics. Your identity is your Master Password.
+4. **Local Mastery**: Your database is on your device. You own the hardware, the database, and the keys.
+
+---
+
 ## 🔒 The Zero-Trust Model
 Vault Tracker operates on a **Local-Only** data persistence model:
 1. **No Backend**: Your data never touches a server.
