@@ -1,4 +1,4 @@
-# 🛡️ Vault Tracker v1.1.0
+# 🛡️ Vault Tracker v1.1.9
 
 **Zero-Trust. Zero-Knowledge. 100% Private.**
 
