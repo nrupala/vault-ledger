@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Licensed under AGPL-3.0 (portfolio license policy, owner decision 2026-10-11); canonical license text added as `LICENSE`.
+
+
 ### Added
 - `CONTRIBUTING.md`: PR-flow discipline (draft PR → CI green → owner merges;
   no direct pushes to `main`; CHANGELOG entry under Unreleased per PR; semver
