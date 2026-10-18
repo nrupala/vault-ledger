@@ -1,8 +1,8 @@
-# 🛡️ Vault Tracker v1.1.9
+# 🛡️ Vault Ledger v1.1.9
 
 **Zero-Trust. Zero-Knowledge. 100% Private.**
 
-Vault Tracker is a premium, decentralized productivity suite designed for users who refuse to compromise on privacy. Built with a "Security-First" philosophy, it transforms your browser into a high-performance encryption engine where your notes, tasks, and habits are sealed with military-grade AES-256-GCM.
+Vault Ledger is a premium, decentralized productivity suite designed for users who refuse to compromise on privacy. Built with a "Security-First" philosophy, it transforms your browser into a high-performance encryption engine where your notes, tasks, and habits are sealed with military-grade AES-256-GCM.
 
 ### 🌐 The Vault Ecosystem
 Experience the full suite or use focused mini-apps for specific workflows:
@@ -38,10 +38,12 @@ Vault Tracker operates on a **Local-Only** data persistence model:
 3. **AES-GCM Encryption**: All content is encrypted *before* it hits the storage layer.
 4. **Decentralized Storage**: Data is saved in your browser's IndexedDB, accessible only through your master key.
 
+**Storage standard (decided 2026-10-18):** This app is migrating from IndexedDB (Dexie.js) to SQLite with SQLCipher — the whole database file encrypted with AES-256, keys derived from your master password and never leaving your device. Until the migration lands, the app runs on Dexie/IndexedDB with all content AES-256-GCM encrypted before it reaches the storage layer. Zero-knowledge throughout: we never hold your keys or your data.
+
 ## 🛠️ Tech Stack
 - **Frontend**: React 19, TypeScript, Vite
 - **Styling**: Vanilla CSS, Framer Motion (Animations)
-- **Engine**: Web Crypto API, Dexie.js (IndexedDB)
+- **Engine**: Web Crypto API, SQLite + SQLCipher (family standard, migration in progress)
 - **Tooling**: Capacitor (Mobile), Vitest (Tests)
 
 ---
