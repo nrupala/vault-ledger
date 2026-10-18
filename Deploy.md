@@ -1,6 +1,6 @@
 # 🚢 Deployment & Installation Guide
 
-Vault Tracker can be deployed as an infinitely scaling static site since it has no backend.
+Vault Ledger can be deployed as an infinitely scaling static site since it has no backend.
 
 ## 🌐 Web Deployment (Vercel / Netlify / GitHub Pages)
 
@@ -16,7 +16,7 @@ Vault Tracker can be deployed as an infinitely scaling static site since it has 
 
 ## 📱 Android Packaging (Capacitor)
 
-Vault Tracker is pre-configured with Capacitor.
+Vault Ledger is pre-configured with Capacitor.
 
 1. **Build Web Assets**: `npm run build`.
 2. **Sync Native Projects**: `npx cap sync android`.
