@@ -70,8 +70,8 @@
     "wait-on": "^8.0.5"
   },
   "build": {
-    "appId": "com.nrupal.vaulttracker",
-    "productName": "Vault Tracker",
+    "appId": "com.vault.ledger",
+    "productName": "Vault Ledger",
     "copyright": "Copyright © 2026 Nrupal Akolkar",
     "files": [
       "dist/**/*",

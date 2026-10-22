@@ -10,7 +10,7 @@ export function AboutApp() {
         <div className="inline-flex p-4 bg-primary/10 rounded-3xl mb-4">
           <Shield className="w-16 h-16 text-primary" />
         </div>
-        <h2 className="text-4xl font-black tracking-tighter">Vault Tracker v1.1.0</h2>
+        <h2 className="text-4xl font-black tracking-tighter">Vault Ledger v1.1.0</h2>
         <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
           Sync with Your Keys. Retain Your Sovereignty.. High-fidelity mobile experience with cross-format data portability.
         </p>
@@ -104,7 +104,7 @@ export function AboutApp() {
       <div className="pt-10 border-t border-border/50 text-center space-y-8">
         <div className="flex justify-center items-center gap-2 text-sm font-semibold text-muted-foreground">
           Built with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> by 
-          <span className="text-foreground">Vault Tracker Makers</span>
+          <span className="text-foreground">Vault Ledger Makers</span>
         </div>
 
         <div className="flex flex-col items-center gap-6">

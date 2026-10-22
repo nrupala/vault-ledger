@@ -11,6 +11,12 @@ on:
 permissions:
   contents: write # needed to publish the GitHub Release on tag
 
+env:
+  # Family release-certificate fingerprint (SHA-256, no colons).
+  # The child repos do not define a VAULT_CERT_SHA256 repository variable,
+  # so the expected fingerprint is pinned here, in the workflow itself.
+  VAULT_CERT_SHA256: b0932c0d2e653a15dc0662186fc4bb73e8a4c8ef849dcfb27ba60db67d417d33
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -65,6 +71,44 @@ jobs:
         with:
           name: vault-ledger-debug
           path: android/app/build/outputs/apk/debug/app-debug.apk
+
+
+      - name: Decode release keystore (AAB)
+        run: |
+          if [ -z "${{ secrets.VAULT_KEYSTORE_BASE64 }}" ]; then
+            echo "::error::VAULT_KEYSTORE_BASE64 secret is missing - release AAB builds must be signed with the family key"
+            exit 1
+          fi
+          echo "${{ secrets.VAULT_KEYSTORE_BASE64 }}" | base64 -d > "$RUNNER_TEMP/vault-release.p12"
+
+      - name: Build Android App Bundle (release)
+        env:
+          VAULT_KEYSTORE_FILE: ${{ runner.temp }}/vault-release.p12
+          VAULT_KEYSTORE_PASSWORD: <redacted>
+          VAULT_KEY_PASSWORD: <redacted>
+          VAULT_KEY_ALIAS: vault
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew bundleRelease
+
+      - name: Verify AAB signature
+        run: |
+          AAB=android/app/build/outputs/bundle/release/app-release.aab
+          keytool -printcert -jarfile "$AAB" | tee /tmp/aab-cert.txt
+          ACTUAL=$(grep -i "SHA256:" /tmp/aab-cert.txt | head -1 | sed 's/.*SHA256://' | tr -d ' : ' | tr 'A-F' 'a-f')
+          EXPECTED=$(echo "$VAULT_CERT_SHA256" | tr -d ':' | tr 'A-F' 'a-f')
+          echo "AAB signer sha256: $ACTUAL"
+          if [ -z "$ACTUAL" ] || [ "$ACTUAL" != "$EXPECTED" ]; then
+            echo "::error::AAB signer certificate mismatch - refusing this build"
+            exit 1
+          fi
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: vault-ledger-release-aab
+          path: android/app/build/outputs/bundle/release/app-release.aab
 
       - name: Publish GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
