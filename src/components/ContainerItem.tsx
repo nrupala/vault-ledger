@@ -58,7 +58,7 @@ export function ContainerItem({ item, children, onUpdate, onDelete }: ContainerI
   const handleShare = async () => {
     try {
       const shareData = {
-        title: (item.payload as any).title || 'Vault Tracker Item',
+        title: (item.payload as any).title || 'Vault Ledger Item',
         text: (item.payload as any).content || (item.payload as any).title || '',
       };
       if (navigator.share) {
