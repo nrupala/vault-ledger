@@ -1,4 +1,4 @@
-import { Shield, Github, Heart, Lock, Mic, RefreshCcw, History, Trash2, Calendar } from 'lucide-react';
+import { Shield, Github, Heart, Lock, Mic, ArrowLeftRight, History, Trash2, Calendar } from 'lucide-react';
 import { useVault, useSettings } from '@/lib/core';
 
 export function AboutApp() {
@@ -10,9 +10,9 @@ export function AboutApp() {
         <div className="inline-flex p-4 bg-primary/10 rounded-3xl mb-4">
           <Shield className="w-16 h-16 text-primary" />
         </div>
-        <h2 className="text-4xl font-black tracking-tighter">Vault Ledger v1.1.0</h2>
+        <h2 className="text-4xl font-black tracking-tighter">Vault Ledger v1.1.9</h2>
         <p className="text-muted-foreground max-w-md mx-auto leading-relaxed">
-          Sync with Your Keys. Retain Your Sovereignty.. High-fidelity mobile experience with cross-format data portability.
+          Your keys. Your device. Your sovereignty. A private, encrypted ledger with cross-format data portability.
         </p>
 
       </div>
@@ -33,16 +33,16 @@ export function AboutApp() {
           </h3>
           <div className="text-sm text-muted-foreground space-y-2">
             <p className="font-medium text-foreground italic">"Task [Title]" / "Expense [Amount]"</p>
-            <p>Rapid, hands-free entry using local-only semantic parsing. No voice data ever leaves your device.</p>
+            <p>Rapid, hands-free entry. Recognition is provided by your device's speech service; only the transcript is used, it is parsed on your device, and the app stores no audio.</p>
           </div>
         </div>
 
         <div className="bg-card border border-border p-6 rounded-2xl shadow-sm space-y-4 text-left">
           <h3 className="font-bold text-lg flex items-center gap-2">
-            <RefreshCcw className="w-5 h-5 text-blue-500" /> Sovereign Sync
+            <ArrowLeftRight className="w-5 h-5 text-blue-500" /> Your Data, Portable
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Connect any **Universal Provider** (GDrive, WebDAV, Local FS). Sync data as **encrypted blobs**, ensuring zero exposure to the cloud.
+            No cloud sync — your vault stays on this device. **Export** your records as JSON or CSV whenever you want, to wherever you choose, and **import** from CSV to bring data in. Your data moves only when you move it.
           </p>
         </div>
 
