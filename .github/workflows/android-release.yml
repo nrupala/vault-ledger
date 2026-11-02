@@ -84,8 +84,8 @@ jobs:
       - name: Build Android App Bundle (release)
         env:
           VAULT_KEYSTORE_FILE: ${{ runner.temp }}/vault-release.p12
-          VAULT_KEYSTORE_PASSWORD: <redacted>
-          VAULT_KEY_PASSWORD: <redacted>
+          VAULT_KEYSTORE_PASSWORD: ${{ secrets.VAULT_KEYSTORE_PASSWORD }}
+          VAULT_KEY_PASSWORD: ${{ secrets.VAULT_KEY_PASSWORD }}
           VAULT_KEY_ALIAS: vault
         run: |
           cd android
