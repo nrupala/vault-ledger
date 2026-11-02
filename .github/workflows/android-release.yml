@@ -31,10 +31,10 @@ jobs:
           TAG_VER="${GITHUB_REF_NAME#apk-v}"; TAG_VER="${TAG_VER#v}"
           PKG_VER="$(node -p "require(\"./package.json\").version")"
           if [ "$TAG_VER" != "$PKG_VER" ]; then
-            echo "::error::Tag ${{GITHUB_REF_NAME}} (=${{TAG_VER}}) does not match package.json version ${{PKG_VER}}."
+            echo "::error::Tag ${GITHUB_REF_NAME} (=${TAG_VER}) does not match package.json version ${PKG_VER}."
             exit 1
           fi
-          echo "version guard OK: ${{PKG_VER}}"
+          echo "version guard OK: ${PKG_VER}"
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
