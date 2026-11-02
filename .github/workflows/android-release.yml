@@ -28,7 +28,7 @@ jobs:
       - name: Verify tag matches package.json version (standard)
         if: github.ref_type == 'tag'
         run: |
-          TAG_VER="${{GITHUB_REF_NAME#apk-v}}"; TAG_VER="${{TAG_VER#v}}"
+          TAG_VER="${GITHUB_REF_NAME#apk-v}"; TAG_VER="${TAG_VER#v}"
           PKG_VER="$(node -p "require(\"./package.json\").version")"
           if [ "$TAG_VER" != "$PKG_VER" ]; then
             echo "::error::Tag ${{GITHUB_REF_NAME}} (=${{TAG_VER}}) does not match package.json version ${{PKG_VER}}."
