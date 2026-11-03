@@ -19,7 +19,10 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Windows, X64, familyci-win]
+    defaults:
+      run:
+        shell: C:\PROGRA~1\Git\bin\bash.exe -e {0}
 
     steps:
       - name: Checkout Code
