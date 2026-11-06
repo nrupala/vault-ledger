@@ -14,6 +14,24 @@ Experience the full suite or use focused mini-apps for specific workflows:
 
 ![Vault Ledger Icon](public/icon-512.png)
 
+## Getting started
+
+**Use it:** open the web app at https://nrupala.github.io/vault-ledger/ — it runs
+entirely in your browser; your data is encrypted locally (AES-256-GCM) and never
+leaves your device. Android and desktop (Electron) builds are produced from this
+repository's release workflows.
+
+**Develop:**
+
+```bash
+npm install     # install dependencies
+npm run dev     # Vite dev server
+npm test        # vitest suite (src/tests/)
+npm run build   # type-check + production build
+```
+
+Full help is in [HELP.md](HELP.md); deployment notes are in [Deploy.md](Deploy.md).
+
 ## ✨ New in v1.1.0
 - **📱 Mobile Maturity**: High-fidelity PWA support with `viewport-fit=cover` for iOS/Android notch support and standalone native builds.
 - **🔄 Universal Data Import**: Seamlessly import data from **JSON**, **Plain Text**, and **iCalendar (.ics)** formats directly into your encrypted vaults.
