@@ -1,5 +1,7 @@
 # 🛡️ Vault Ledger v1.1.9
 
+[![Licence](https://img.shields.io/badge/licence-AGPL--3.0-blue.svg)](LICENSE)
+
 **Zero-Trust. Zero-Knowledge. 100% Private.**
 
 Vault Ledger is a premium, decentralized productivity suite designed for users who refuse to compromise on privacy. Built with a "Security-First" philosophy, it transforms your browser into a high-performance encryption engine where your notes, tasks, and habits are sealed with military-grade AES-256-GCM.
