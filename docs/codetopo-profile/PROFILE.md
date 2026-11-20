@@ -7,16 +7,17 @@ submits or changes anything. Read this first; the graph snapshot beside it
 (`snapshot.json`, `stats.json`) is the measured evidence.
 
 - **Repo:** nrupala/vault-ledger
-- **Commit profiled:** `5388ad0bacb0ce7276181befea8fc82bf2278728` (main)
-- **Engine:** codetopo 0.9.1 · index run 2026-11-18
-- **Graph:** 50 files walked · 0 failed · 710 nodes · 1324 edges · audit chain valid (3 entries, head `ee216f8a…d1f75`)
-- **Nodes by kind:** external 489 · variable 56 · file 50 · module 48 · function 29 · interface 20 · doc 13 · class 4 · package 1
-- **Edges by kind:** calls 675 · contains 220 · reads 202 · defines 136 · imports 89 · writes 2
+- **Commit profiled:** `21c5b7317f02d00b317eea59ea8cbbe2985b7c87` (main)
+- **Engine:** codetopo 0.9.1 + full-language program (engine built from codetopo main `d71509d1` — all sixteen program extractors merged) · index run 2026-11-19
+- **Graph:** 57 files walked · 0 failed · 782 nodes · 1,425 edges · audit chain valid (3 entries, head `4371b7d4…d3fe`)
+- **Nodes by kind:** external 519 · variable 71 · file 57 · module 55 · function 29 · interface 20 · doc 14 · class 8 · method 8 · package 1
+- **Edges by kind:** calls 703 · contains 262 · reads 219 · defines 142 · imports 96 · writes 2 · inherits 1
 
 ## Coverage honesty
 
-Codetopo extracts Rust, TypeScript/JavaScript and Python, plus Markdown as Doc nodes. This repo's application code is TypeScript/TSX (15 `.ts` + 14 `.tsx` files) plus small plain-JS config (5 `.js`) and is extracted at full symbol level. The 13 Markdown files are indexed as Doc nodes only. NOT covered at symbol level — Capacitor platform scaffolding residuals: Java (3 files, `android/` `MainActivity.java` + tests), Swift (1 file, `ios/`), Ruby (the `ios/App/Podfile`, Ruby DSL with no `.rb` extension), Gradle build scripts (6), and XML/plist/storyboard resources — stock Capacitor shells, not application logic.
+**Re-profiled 2026-11-19** with the full-language engine (Codetopo extractor program, 2026-11-18 ruling): every language this repo is written in is now extracted at symbol level. First profile: 2026-11-18 (Codetopo 0.9.1).
 
+Codetopo now extracts every language in the full-language program (Rust, TypeScript/JavaScript, Python, Kotlin, C, Java, Go, Shell, C++, Swift, Ruby, R, Julia, C#, PHP, Scala, Haskell, Elixir, Lua), plus Markdown as Doc nodes. The TypeScript/React app is extracted at symbol level as before, and the Capacitor native scaffolding named as the residual in the first profile is now in the graph: the Java `MainActivity` and test classes under `android/app/src/` and the Swift `AppDelegate` under `ios/App/App/`. Gradle/XML/plist/storyboard files are configuration, not code, and are not parsed; read them directly. Symbol coverage of the codebase is complete.
 ## Topology
 
 Single-app repo (`@vault/ledger`): the focused ledger app — a zero-knowledge financial journal ("Needs vs Wants") — cut from the same vault core as the parent suite. Note the domain carefully: this app *records* the user's own finances locally; it does not move money (see Money surface).

@@ -4,7 +4,7 @@
   "profile_version": "1.0.0",
   "graph_class": "truths",
   "provenance_summary": {
-    "extracted_truth": 1324
+    "extracted_truth": 1425
   },
   "nodes": [
     {
@@ -152,6 +152,42 @@
       "refs": []
     },
     {
+      "id": "@vault/ledger::/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "kind": "file",
+      "label": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "loc": {
+        "file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::/android/app/src/main/java/com/vault/ledger/MainActivity.java",
+      "kind": "file",
+      "label": "android/app/src/main/java/com/vault/ledger/MainActivity.java",
+      "loc": {
+        "file": "android/app/src/main/java/com/vault/ledger/MainActivity.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "kind": "file",
+      "label": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "loc": {
+        "file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "@vault/ledger::/capacitor.config.ts",
       "kind": "file",
       "label": "capacitor.config.ts",
@@ -200,6 +236,30 @@
       "refs": []
     },
     {
+      "id": "@vault/ledger::/docs/codetopo-profile/PROFILE.md",
+      "kind": "file",
+      "label": "docs/codetopo-profile/PROFILE.md",
+      "loc": {
+        "file": "docs/codetopo-profile/PROFILE.md",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "kind": "file",
+      "label": "docs/codetopo-profile/refresh.sh",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "@vault/ledger::/electron/main.cjs",
       "kind": "file",
       "label": "electron/main.cjs",
@@ -224,6 +284,18 @@
       "refs": []
     },
     {
+      "id": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "kind": "file",
+      "label": "ios/App/App/AppDelegate.swift",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "@vault/ledger::/postcss.config.js",
       "kind": "file",
       "label": "postcss.config.js",
@@ -241,6 +313,18 @@
       "label": "scripts/bump-version.mjs",
       "loc": {
         "file": "scripts/bump-version.mjs",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "kind": "file",
+      "label": "scripts/stamp-app-version.sh",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
         "line": 1
       },
       "tier": "core",
@@ -952,35 +1036,7 @@
       "signature": "c"
     },
     {
-      "id": "@vault/ledger::dist::sw::e",
-      "kind": "variable",
-      "label": "e",
-      "loc": {
-        "file": "dist/sw.js",
-        "line": 1
-      },
-      "tier": "optional",
-      "defines": [],
-      "refs": [],
-      "end_line": 1,
-      "signature": "e"
-    },
-    {
-      "id": "@vault/ledger::dist::sw::i",
-      "kind": "variable",
-      "label": "i",
-      "loc": {
-        "file": "dist/sw.js",
-        "line": 1
-      },
-      "tier": "optional",
-      "defines": [],
-      "refs": [],
-      "end_line": 1,
-      "signature": "i"
-    },
-    {
-      "id": "@vault/ledger::dist::sw::l",
+      "id": "@vault/ledger::dist::sw::c::l",
       "kind": "variable",
       "label": "l",
       "loc": {
@@ -996,6 +1052,34 @@
       ],
       "end_line": 1,
       "signature": "l"
+    },
+    {
+      "id": "@vault/ledger::dist::sw::e",
+      "kind": "variable",
+      "label": "e",
+      "loc": {
+        "file": "dist/sw.js",
+        "line": 1
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 1,
+      "signature": "e"
+    },
+    {
+      "id": "@vault/ledger::dist::sw::e::i",
+      "kind": "variable",
+      "label": "i",
+      "loc": {
+        "file": "dist/sw.js",
+        "line": 1
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 1,
+      "signature": "i"
     },
     {
       "id": "@vault/ledger::dist::sw::n",
@@ -1077,6 +1161,104 @@
       "refs": []
     },
     {
+      "id": "@vault/ledger::docs::codetopo-profile::PROFILE",
+      "kind": "module",
+      "label": "@vault/ledger::docs::codetopo-profile::PROFILE",
+      "loc": {
+        "file": "docs/codetopo-profile/PROFILE.md",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::PROFILE::PROFILE",
+      "kind": "doc",
+      "label": "PROFILE",
+      "loc": {
+        "file": "docs/codetopo-profile/PROFILE.md",
+        "line": 1
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::refresh",
+      "kind": "module",
+      "label": "@vault/ledger::docs::codetopo-profile::refresh",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::refresh::HERE",
+      "kind": "variable",
+      "label": "HERE",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 8
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "cd",
+        "dirname",
+        "pwd"
+      ],
+      "end_line": 8,
+      "signature": "HERE"
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::refresh::PYTHONPATH",
+      "kind": "variable",
+      "label": "PYTHONPATH",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 10
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 10,
+      "signature": "PYTHONPATH"
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::refresh::REF",
+      "kind": "variable",
+      "label": "REF",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 7
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 7,
+      "signature": "REF"
+    },
+    {
+      "id": "@vault/ledger::docs::codetopo-profile::refresh::WORK",
+      "kind": "variable",
+      "label": "WORK",
+      "loc": {
+        "file": "docs/codetopo-profile/refresh.sh",
+        "line": 9
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "mktemp"
+      ],
+      "end_line": 9,
+      "signature": "WORK"
+    },
+    {
       "id": "@vault/ledger::electron::main.cjs",
       "kind": "module",
       "label": "@vault/ledger::electron::main.cjs",
@@ -1153,6 +1335,149 @@
       "tier": "core",
       "defines": [],
       "refs": []
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate",
+      "kind": "module",
+      "label": "@vault/ledger::ios::App::App::AppDelegate",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate",
+      "kind": "class",
+      "label": "AppDelegate",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 4
+      },
+      "tier": "recommended",
+      "defines": [],
+      "refs": [],
+      "end_line": 49,
+      "signature": "@UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate"
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "method",
+      "label": "application",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 9
+      },
+      "tier": "optional",
+      "defines": [
+        "application",
+        "launchOptions"
+      ],
+      "refs": [
+        "Any",
+        "Bool",
+        "UIApplication"
+      ],
+      "end_line": 12,
+      "signature": "func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool",
+      "decisions": 0
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidBecomeActive",
+      "kind": "method",
+      "label": "applicationDidBecomeActive",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 28
+      },
+      "tier": "optional",
+      "defines": [
+        "application"
+      ],
+      "refs": [
+        "UIApplication"
+      ],
+      "end_line": 30,
+      "signature": "func applicationDidBecomeActive(_ application: UIApplication)",
+      "decisions": 0
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidEnterBackground",
+      "kind": "method",
+      "label": "applicationDidEnterBackground",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 19
+      },
+      "tier": "optional",
+      "defines": [
+        "application"
+      ],
+      "refs": [
+        "UIApplication"
+      ],
+      "end_line": 22,
+      "signature": "func applicationDidEnterBackground(_ application: UIApplication)",
+      "decisions": 0
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillEnterForeground",
+      "kind": "method",
+      "label": "applicationWillEnterForeground",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 24
+      },
+      "tier": "optional",
+      "defines": [
+        "application"
+      ],
+      "refs": [
+        "UIApplication"
+      ],
+      "end_line": 26,
+      "signature": "func applicationWillEnterForeground(_ application: UIApplication)",
+      "decisions": 0
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillResignActive",
+      "kind": "method",
+      "label": "applicationWillResignActive",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 14
+      },
+      "tier": "optional",
+      "defines": [
+        "application"
+      ],
+      "refs": [
+        "UIApplication"
+      ],
+      "end_line": 17,
+      "signature": "func applicationWillResignActive(_ application: UIApplication)",
+      "decisions": 0
+    },
+    {
+      "id": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillTerminate",
+      "kind": "method",
+      "label": "applicationWillTerminate",
+      "loc": {
+        "file": "ios/App/App/AppDelegate.swift",
+        "line": 32
+      },
+      "tier": "optional",
+      "defines": [
+        "application"
+      ],
+      "refs": [
+        "UIApplication"
+      ],
+      "end_line": 34,
+      "signature": "func applicationWillTerminate(_ application: UIApplication)",
+      "decisions": 0
     },
     {
       "id": "@vault/ledger::postcss.config",
@@ -1350,6 +1675,188 @@
       ],
       "end_line": 5,
       "signature": "ver"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version",
+      "kind": "module",
+      "label": "@vault/ledger::scripts::stamp-app-version",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::CODE",
+      "kind": "variable",
+      "label": "CODE",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 47
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "MAJOR",
+        "MINOR",
+        "PATCH"
+      ],
+      "end_line": 47,
+      "signature": "CODE"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::GRADLE",
+      "kind": "variable",
+      "label": "GRADLE",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 54
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 54,
+      "signature": "GRADLE"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::MAJOR",
+      "kind": "variable",
+      "label": "MAJOR",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 42
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "raw"
+      ],
+      "end_line": 42,
+      "signature": "MAJOR"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::MINOR",
+      "kind": "variable",
+      "label": "MINOR",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 42
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "rest"
+      ],
+      "end_line": 42,
+      "signature": "MINOR"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::NAME",
+      "kind": "variable",
+      "label": "NAME",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 48
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "raw"
+      ],
+      "end_line": 48,
+      "signature": "NAME"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::PATCH",
+      "kind": "variable",
+      "label": "PATCH",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 42
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "rest"
+      ],
+      "end_line": 42,
+      "signature": "PATCH"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::PLIST",
+      "kind": "variable",
+      "label": "PLIST",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 64
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 64,
+      "signature": "PLIST"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::is_tag",
+      "kind": "variable",
+      "label": "is_tag",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 21
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 21,
+      "signature": "is_tag"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::raw",
+      "kind": "variable",
+      "label": "raw",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 17
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "STAMP_VERSION"
+      ],
+      "end_line": 17,
+      "signature": "raw"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::rest",
+      "kind": "variable",
+      "label": "rest",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 42
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "raw"
+      ],
+      "end_line": 42,
+      "signature": "rest"
+    },
+    {
+      "id": "@vault/ledger::scripts::stamp-app-version::stamped",
+      "kind": "variable",
+      "label": "stamped",
+      "loc": {
+        "file": "scripts/stamp-app-version.sh",
+        "line": 51
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 51,
+      "signature": "stamped"
     },
     {
       "id": "@vault/ledger::src::App",
@@ -3769,6 +4276,127 @@
       "refs": []
     },
     {
+      "id": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "kind": "module",
+      "label": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "loc": {
+        "file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest",
+      "kind": "class",
+      "label": "ExampleInstrumentedTest",
+      "loc": {
+        "file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+        "line": 16
+      },
+      "tier": "recommended",
+      "defines": [],
+      "refs": [],
+      "end_line": 26,
+      "signature": "@RunWith(AndroidJUnit4.class) public class ExampleInstrumentedTest"
+    },
+    {
+      "id": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "kind": "method",
+      "label": "useAppContext",
+      "loc": {
+        "file": "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+        "line": 19
+      },
+      "tier": "optional",
+      "defines": [
+        "appContext"
+      ],
+      "refs": [
+        "Context",
+        "InstrumentationRegistry",
+        "assertEquals",
+        "getInstrumentation",
+        "getPackageName",
+        "getTargetContext",
+        "void"
+      ],
+      "end_line": 25,
+      "signature": "@Test public void useAppContext() throws Exception",
+      "decisions": 0
+    },
+    {
+      "id": "com::getcapacitor::myapp::ExampleUnitTest",
+      "kind": "module",
+      "label": "com::getcapacitor::myapp::ExampleUnitTest",
+      "loc": {
+        "file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest",
+      "kind": "class",
+      "label": "ExampleUnitTest",
+      "loc": {
+        "file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+        "line": 12
+      },
+      "tier": "recommended",
+      "defines": [],
+      "refs": [],
+      "end_line": 18,
+      "signature": "public class ExampleUnitTest"
+    },
+    {
+      "id": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest::addition_isCorrect",
+      "kind": "method",
+      "label": "addition_isCorrect",
+      "loc": {
+        "file": "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+        "line": 14
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "assertEquals",
+        "void"
+      ],
+      "end_line": 17,
+      "signature": "@Test public void addition_isCorrect() throws Exception",
+      "decisions": 0
+    },
+    {
+      "id": "com::vault::ledger::MainActivity",
+      "kind": "module",
+      "label": "com::vault::ledger::MainActivity",
+      "loc": {
+        "file": "android/app/src/main/java/com/vault/ledger/MainActivity.java",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "com::vault::ledger::MainActivity::MainActivity",
+      "kind": "class",
+      "label": "MainActivity",
+      "loc": {
+        "file": "android/app/src/main/java/com/vault/ledger/MainActivity.java",
+        "line": 5
+      },
+      "tier": "recommended",
+      "defines": [],
+      "refs": [],
+      "end_line": 5,
+      "signature": "public class MainActivity extends BridgeActivity"
+    },
+    {
       "id": "external::([\n                  { type: 'note' as const, icon: FileText, label: 'Note', color: 'text-blue-500 bg-blue-500/10 border-blue-500/30' },\n                  { type: 'task' as const, icon: CheckSquare, label: 'Task', color: 'text-green-500 bg-green-500/10 border-green-500/30' },\n                  { type: 'habit' as const, icon: Activity, label: 'Habit', color: 'text-purple-500 bg-purple-500/10 border-purple-500/30' },\n                ]).map",
       "kind": "external",
       "label": "([\n                  { type: 'note' as const, icon: FileText, label: 'Note', color: 'text-blue-500 bg-blue-500/10 border-blue-500/30' },\n                  { type: 'task' as const, icon: CheckSquare, label: 'Task', color: 'text-green-500 bg-green-500/10 border-green-500/30' },\n                  { type: 'habit' as const, icon: Activity, label: 'Habit', color: 'text-purple-500 bg-purple-500/10 border-purple-500/30' },\n                ]).map",
@@ -3853,6 +4481,18 @@
       "refs": []
     },
     {
+      "id": "external::/usr/libexec/PlistBuddy",
+      "kind": "external",
+      "label": "/usr/libexec/PlistBuddy",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::@/lib/core",
       "kind": "external",
       "label": "@/lib/core",
@@ -3916,6 +4556,18 @@
       "id": "external::@vitejs/plugin-react",
       "kind": "external",
       "label": "@vitejs/plugin-react",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::ApplicationDelegateProxy.shared.application",
+      "kind": "external",
+      "label": "ApplicationDelegateProxy.shared.application",
       "loc": {
         "file": "",
         "line": 0
@@ -4000,6 +4652,18 @@
       "id": "external::CURATED_CATEGORIES.map",
       "kind": "external",
       "label": "CURATED_CATEGORIES.map",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::Capacitor",
+      "kind": "external",
+      "label": "Capacitor",
       "loc": {
         "file": "",
         "line": 0
@@ -4369,6 +5033,18 @@
       "refs": []
     },
     {
+      "id": "external::UIKit",
+      "kind": "external",
+      "label": "UIKit",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::URL",
       "kind": "external",
       "label": "URL",
@@ -4549,6 +5225,30 @@
       "refs": []
     },
     {
+      "id": "external::android",
+      "kind": "external",
+      "label": "android",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::androidx",
+      "kind": "external",
+      "label": "androidx",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::app.on",
       "kind": "external",
       "label": "app.on",
@@ -4588,6 +5288,18 @@
       "id": "external::app.whenReady().then",
       "kind": "external",
       "label": "app.whenReady().then",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::assertEquals",
+      "kind": "external",
+      "label": "assertEquals",
       "loc": {
         "file": "",
         "line": 0
@@ -4681,9 +5393,45 @@
       "refs": []
     },
     {
+      "id": "external::cd",
+      "kind": "external",
+      "label": "cd",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::checkIn",
       "kind": "external",
       "label": "checkIn",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::codetopo",
+      "kind": "external",
+      "label": "codetopo",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::com::getcapacitor::BridgeActivity",
+      "kind": "external",
+      "label": "com::getcapacitor::BridgeActivity",
       "loc": {
         "file": "",
         "line": 0
@@ -5713,6 +6461,18 @@
       "refs": []
     },
     {
+      "id": "external::dirname",
+      "kind": "external",
+      "label": "dirname",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::document.body.appendChild",
       "kind": "external",
       "label": "document.body.appendChild",
@@ -5941,6 +6701,18 @@
       "refs": []
     },
     {
+      "id": "external::echo",
+      "kind": "external",
+      "label": "echo",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::editAttachments.map",
       "kind": "external",
       "label": "editAttachments.map",
@@ -6052,6 +6824,18 @@
       "id": "external::existsSync",
       "kind": "external",
       "label": "existsSync",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::exit",
+      "kind": "external",
+      "label": "exit",
       "loc": {
         "file": "",
         "line": 0
@@ -6373,9 +7157,57 @@
       "refs": []
     },
     {
+      "id": "external::getInstrumentation",
+      "kind": "external",
+      "label": "getInstrumentation",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::getItemsForDate",
       "kind": "external",
       "label": "getItemsForDate",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::getPackageName",
+      "kind": "external",
+      "label": "getPackageName",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::getTargetContext",
+      "kind": "external",
+      "label": "getTargetContext",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::grep",
+      "kind": "external",
+      "label": "grep",
       "loc": {
         "file": "",
         "line": 0
@@ -7057,6 +7889,30 @@
       "refs": []
     },
     {
+      "id": "external::mkdir",
+      "kind": "external",
+      "label": "mkdir",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::mktemp",
+      "kind": "external",
+      "label": "mktemp",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::mode.replace",
       "kind": "external",
       "label": "mode.replace",
@@ -7429,6 +8285,18 @@
       "refs": []
     },
     {
+      "id": "external::node",
+      "kind": "external",
+      "label": "node",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::node:fs",
       "kind": "external",
       "label": "node:fs",
@@ -7549,6 +8417,18 @@
       "refs": []
     },
     {
+      "id": "external::org",
+      "kind": "external",
+      "label": "org",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::papaparse",
       "kind": "external",
       "label": "papaparse",
@@ -7645,6 +8525,18 @@
       "refs": []
     },
     {
+      "id": "external::perl",
+      "kind": "external",
+      "label": "perl",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::prev.filter",
       "kind": "external",
       "label": "prev.filter",
@@ -7657,9 +8549,45 @@
       "refs": []
     },
     {
+      "id": "external::printf",
+      "kind": "external",
+      "label": "printf",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::process.exit",
       "kind": "external",
       "label": "process.exit",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::pwd",
+      "kind": "external",
+      "label": "pwd",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::python3",
+      "kind": "external",
+      "label": "python3",
       "loc": {
         "file": "",
         "line": 0
@@ -8029,9 +8957,33 @@
       "refs": []
     },
     {
+      "id": "external::sed",
+      "kind": "external",
+      "label": "sed",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::self.skipWaiting",
       "kind": "external",
       "label": "self.skipWaiting",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::set",
+      "kind": "external",
+      "label": "set",
       "loc": {
         "file": "",
         "line": 0
@@ -8905,6 +9857,18 @@
       "refs": []
     },
     {
+      "id": "external::tar",
+      "kind": "external",
+      "label": "tar",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::tasks.filter",
       "kind": "external",
       "label": "tasks.filter",
@@ -9097,9 +10061,33 @@
       "refs": []
     },
     {
+      "id": "external::tr",
+      "kind": "external",
+      "label": "tr",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::transcript.split",
       "kind": "external",
       "label": "transcript.split",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::true",
+      "kind": "external",
+      "label": "true",
       "loc": {
         "file": "",
         "line": 0
@@ -9730,6 +10718,18 @@
     },
     {
       "from": "@vault/ledger",
+      "to": "@vault/ledger::docs::codetopo-profile::PROFILE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
+      "to": "@vault/ledger::docs::codetopo-profile::refresh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
       "to": "@vault/ledger::electron::main.cjs",
       "kind": "contains",
       "attrs": {}
@@ -9742,6 +10742,12 @@
     },
     {
       "from": "@vault/ledger",
+      "to": "@vault/ledger::ios::App::App::AppDelegate",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
       "to": "@vault/ledger::postcss.config",
       "kind": "contains",
       "attrs": {}
@@ -9749,6 +10755,12 @@
     {
       "from": "@vault/ledger",
       "to": "@vault/ledger::scripts::bump-version.mjs",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
+      "to": "@vault/ledger::scripts::stamp-app-version",
       "kind": "contains",
       "attrs": {}
     },
@@ -9927,6 +10939,24 @@
       "attrs": {}
     },
     {
+      "from": "@vault/ledger",
+      "to": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
+      "to": "com::getcapacitor::myapp::ExampleUnitTest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger",
+      "to": "com::vault::ledger::MainActivity",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
       "from": "@vault/ledger::/ABOUT_ME.md",
       "to": "@vault/ledger::ABOUT_ME::ABOUT_ME",
       "kind": "contains",
@@ -9993,6 +11023,36 @@
       "attrs": {}
     },
     {
+      "from": "@vault/ledger::/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "to": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "to": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/android/app/src/main/java/com/vault/ledger/MainActivity.java",
+      "to": "com::vault::ledger::MainActivity::MainActivity",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "to": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "to": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest::addition_isCorrect",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
       "from": "@vault/ledger::/capacitor.config.ts",
       "to": "@vault/ledger::capacitor.config::config",
       "kind": "contains",
@@ -10006,19 +11066,19 @@
     },
     {
       "from": "@vault/ledger::/dist/sw.js",
+      "to": "@vault/ledger::dist::sw::c::l",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/dist/sw.js",
       "to": "@vault/ledger::dist::sw::e",
       "kind": "contains",
       "attrs": {}
     },
     {
       "from": "@vault/ledger::/dist/sw.js",
-      "to": "@vault/ledger::dist::sw::i",
-      "kind": "contains",
-      "attrs": {}
-    },
-    {
-      "from": "@vault/ledger::/dist/sw.js",
-      "to": "@vault/ledger::dist::sw::l",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "contains",
       "attrs": {}
     },
@@ -10047,6 +11107,36 @@
       "attrs": {}
     },
     {
+      "from": "@vault/ledger::/docs/codetopo-profile/PROFILE.md",
+      "to": "@vault/ledger::docs::codetopo-profile::PROFILE::PROFILE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "to": "@vault/ledger::docs::codetopo-profile::refresh::HERE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "to": "@vault/ledger::docs::codetopo-profile::refresh::PYTHONPATH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "to": "@vault/ledger::docs::codetopo-profile::refresh::REF",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "to": "@vault/ledger::docs::codetopo-profile::refresh::WORK",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
       "from": "@vault/ledger::/electron/main.cjs",
       "to": "@vault/ledger::electron::main.cjs::createWindow",
       "kind": "contains",
@@ -10061,6 +11151,48 @@
     {
       "from": "@vault/ledger::/electron/main.cjs",
       "to": "@vault/ledger::electron::main.cjs::path",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidBecomeActive",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidEnterBackground",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillEnterForeground",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillResignActive",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillTerminate",
       "kind": "contains",
       "attrs": {}
     },
@@ -10127,6 +11259,72 @@
     {
       "from": "@vault/ledger::/scripts/bump-version.mjs",
       "to": "@vault/ledger::scripts::bump-version.mjs::ver",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::CODE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::GRADLE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::MAJOR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::MINOR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::NAME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::PATCH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::PLIST",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::is_tag",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::raw",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::rest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "to": "@vault/ledger::scripts::stamp-app-version::stamped",
       "kind": "contains",
       "attrs": {}
     },
@@ -10894,21 +12092,21 @@
       "attrs": {}
     },
     {
-      "from": "@vault/ledger::dist::sw::l",
+      "from": "@vault/ledger::dist::sw::c::l",
       "to": "@vault/ledger::dist::sw::c",
       "kind": "reads",
       "line": 1,
       "attrs": {}
     },
     {
-      "from": "@vault/ledger::dist::sw::l",
+      "from": "@vault/ledger::dist::sw::c::l",
       "to": "@vault/ledger::dist::sw::o",
       "kind": "reads",
       "line": 1,
       "attrs": {}
     },
     {
-      "from": "@vault/ledger::dist::sw::l",
+      "from": "@vault/ledger::dist::sw::c::l",
       "to": "@vault/ledger::dist::sw::t",
       "kind": "reads",
       "line": 1,
@@ -10916,14 +12114,14 @@
     },
     {
       "from": "@vault/ledger::dist::sw::n",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "calls",
       "line": 1,
       "attrs": {}
     },
     {
       "from": "@vault/ledger::dist::sw::n",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "reads",
       "line": 1,
       "attrs": {}
@@ -11016,6 +12214,123 @@
       "from": "@vault/ledger::docs::VERSIONING",
       "to": "@vault/ledger::/docs/VERSIONING.md",
       "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::PROFILE",
+      "to": "@vault/ledger::/docs/codetopo-profile/PROFILE.md",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "@vault/ledger::/docs/codetopo-profile/refresh.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::cd",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::codetopo",
+      "kind": "calls",
+      "line": 14,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 18,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::mkdir",
+      "kind": "calls",
+      "line": 13,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::mktemp",
+      "kind": "calls",
+      "line": 9,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::pwd",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::python3",
+      "kind": "calls",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::tar",
+      "kind": "calls",
+      "line": 13,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh::HERE",
+      "to": "external::cd",
+      "kind": "reads",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh::HERE",
+      "to": "external::dirname",
+      "kind": "reads",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh::HERE",
+      "to": "external::pwd",
+      "kind": "reads",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::docs::codetopo-profile::refresh::WORK",
+      "to": "external::mktemp",
+      "kind": "reads",
+      "line": 9,
       "attrs": {}
     },
     {
@@ -11168,6 +12483,83 @@
       "to": "external::require",
       "kind": "calls",
       "line": 1,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate",
+      "to": "@vault/ledger::/ios/App/App/AppDelegate.swift",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate",
+      "to": "external::Capacitor",
+      "kind": "imports",
+      "line": 2,
+      "attrs": {
+        "bindings": [
+          "Capacitor"
+        ]
+      }
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate",
+      "to": "external::UIKit",
+      "kind": "imports",
+      "line": 1,
+      "attrs": {
+        "bindings": [
+          "UIKit"
+        ]
+      }
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 9,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "to": "external::ApplicationDelegateProxy.shared.application",
+      "kind": "calls",
+      "line": 39,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidBecomeActive",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 28,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationDidEnterBackground",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillEnterForeground",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillResignActive",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 14,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::applicationWillTerminate",
+      "to": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+      "kind": "defines",
+      "line": 32,
       "attrs": {}
     },
     {
@@ -11347,6 +12739,145 @@
       "to": "external::new Date().toISOString",
       "kind": "calls",
       "line": 40,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "@vault/ledger::/scripts/stamp-app-version.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::/usr/libexec/PlistBuddy",
+      "kind": "calls",
+      "line": 67,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 31,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::exit",
+      "kind": "calls",
+      "line": 32,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 37,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::node",
+      "kind": "calls",
+      "line": 27,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::perl",
+      "kind": "calls",
+      "line": 73,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::printf",
+      "kind": "calls",
+      "line": 37,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::sed",
+      "kind": "calls",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 15,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::tr",
+      "kind": "calls",
+      "line": 29,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::CODE",
+      "to": "@vault/ledger::scripts::stamp-app-version::MAJOR",
+      "kind": "reads",
+      "line": 47,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::CODE",
+      "to": "@vault/ledger::scripts::stamp-app-version::MINOR",
+      "kind": "reads",
+      "line": 47,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::CODE",
+      "to": "@vault/ledger::scripts::stamp-app-version::PATCH",
+      "kind": "reads",
+      "line": 47,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::MAJOR",
+      "to": "@vault/ledger::scripts::stamp-app-version::raw",
+      "kind": "reads",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::MINOR",
+      "to": "@vault/ledger::scripts::stamp-app-version::rest",
+      "kind": "reads",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::NAME",
+      "to": "@vault/ledger::scripts::stamp-app-version::raw",
+      "kind": "reads",
+      "line": 48,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::PATCH",
+      "to": "@vault/ledger::scripts::stamp-app-version::rest",
+      "kind": "reads",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::scripts::stamp-app-version::rest",
+      "to": "@vault/ledger::scripts::stamp-app-version::raw",
+      "kind": "reads",
+      "line": 42,
       "attrs": {}
     },
     {
@@ -11943,7 +13474,7 @@
     },
     {
       "from": "@vault/ledger::src::components::AnalyticsApp::AnalyticsApp",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 6,
       "attrs": {}
@@ -12485,7 +14016,7 @@
     },
     {
       "from": "@vault/ledger::src::components::CalendarApp::CalendarApp",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 15,
       "attrs": {}
@@ -13611,7 +15142,7 @@
     },
     {
       "from": "@vault/ledger::src::components::HabitsApp::HabitsApp",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 14,
       "attrs": {}
@@ -14682,7 +16213,7 @@
     },
     {
       "from": "@vault/ledger::src::components::NotesApp::NotesApp",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 15,
       "attrs": {}
@@ -15461,7 +16992,7 @@
     },
     {
       "from": "@vault/ledger::src::components::TasksApp::TasksApp",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 14,
       "attrs": {}
@@ -16656,7 +18187,7 @@
     },
     {
       "from": "@vault/ledger::src::lib::core::intelligence::deriveRecommendations",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
       "line": 11,
       "attrs": {}
@@ -16802,6 +18333,13 @@
     },
     {
       "from": "@vault/ledger::src::lib::core::useItems::useItems",
+      "to": "@vault/ledger::dist::sw::c::l",
+      "kind": "reads",
+      "line": 20,
+      "attrs": {}
+    },
+    {
+      "from": "@vault/ledger::src::lib::core::useItems::useItems",
       "to": "@vault/ledger::dist::sw::e",
       "kind": "reads",
       "line": 20,
@@ -16809,15 +18347,8 @@
     },
     {
       "from": "@vault/ledger::src::lib::core::useItems::useItems",
-      "to": "@vault/ledger::dist::sw::i",
+      "to": "@vault/ledger::dist::sw::e::i",
       "kind": "defines",
-      "line": 20,
-      "attrs": {}
-    },
-    {
-      "from": "@vault/ledger::src::lib::core::useItems::useItems",
-      "to": "@vault/ledger::dist::sw::l",
-      "kind": "reads",
       "line": 20,
       "attrs": {}
     },
@@ -19184,36 +20715,218 @@
           "defineConfig"
         ]
       }
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "to": "@vault/ledger::/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "to": "external::android",
+      "kind": "imports",
+      "line": 5,
+      "attrs": {
+        "bindings": [
+          "Context"
+        ]
+      }
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "to": "external::androidx",
+      "kind": "imports",
+      "line": 6,
+      "attrs": {
+        "bindings": [
+          "AndroidJUnit4",
+          "InstrumentationRegistry"
+        ]
+      }
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest",
+      "to": "external::org",
+      "kind": "imports",
+      "line": 3,
+      "attrs": {
+        "bindings": [
+          "RunWith",
+          "Test"
+        ]
+      }
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::assertEquals",
+      "kind": "calls",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::assertEquals",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getInstrumentation",
+      "kind": "calls",
+      "line": 22,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getInstrumentation",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getPackageName",
+      "kind": "calls",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getPackageName",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getTargetContext",
+      "kind": "calls",
+      "line": 22,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+      "to": "external::getTargetContext",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleUnitTest",
+      "to": "@vault/ledger::/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleUnitTest",
+      "to": "external::org",
+      "kind": "imports",
+      "line": 3,
+      "attrs": {
+        "bindings": [
+          "Test"
+        ]
+      }
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest::addition_isCorrect",
+      "to": "external::assertEquals",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "com::getcapacitor::myapp::ExampleUnitTest::ExampleUnitTest::addition_isCorrect",
+      "to": "external::assertEquals",
+      "kind": "reads",
+      "line": 14,
+      "attrs": {}
+    },
+    {
+      "from": "com::vault::ledger::MainActivity",
+      "to": "@vault/ledger::/android/app/src/main/java/com/vault/ledger/MainActivity.java",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "com::vault::ledger::MainActivity",
+      "to": "external::com::getcapacitor::BridgeActivity",
+      "kind": "imports",
+      "line": 3,
+      "attrs": {
+        "bindings": [
+          "BridgeActivity"
+        ]
+      }
+    },
+    {
+      "from": "com::vault::ledger::MainActivity::MainActivity",
+      "to": "external::com::getcapacitor::BridgeActivity",
+      "kind": "inherits",
+      "line": 5,
+      "attrs": {}
     }
   ],
-  "audit_head": "ee216f8a3de09fff6239451deff1fa7a8706312e5deddb33b077841240ed1f75",
+  "audit_head": "4371b7d41548d22327bd2e951a2092f39d7c1b3180c0b59127cf652eb50ad3fe",
   "audit_log": [
     {
       "seq": 0,
-      "ts": "1795021497",
+      "ts": "1795134989",
       "op": "genesis",
       "payload": "{}",
       "prev_hash": "GENESIS",
-      "hash": "6cd09e8d13f96f045d7b4e955f0d84024022d739c3cc18535e22f23fd83b4546"
+      "hash": "6ef9abc2870a9f26a40b11d86d1ad4131a0f23ece56db6f90c65d3ab96a7c500"
     },
     {
       "seq": 1,
-      "ts": "1795021497",
+      "ts": "1795134989",
       "op": "index_started",
-      "payload": "{\"package\":\"vault-ledger\",\"repo\":\"/home/hatch/workspace/codetopo-work/PROFILES-GM-GATE-2026-11-18/work/vault-ledger\"}",
-      "prev_hash": "6cd09e8d13f96f045d7b4e955f0d84024022d739c3cc18535e22f23fd83b4546",
-      "hash": "d79f29648aa892cc96e844ddde683bb2cdebce7f844d22c59ab471467fc20e98"
+      "payload": "{\"package\":\"vault-ledger\",\"repo\":\"/home/hatch/workspace/codetopo-work/EXTRACTOR-PROGRAM-2026-11-19/reprofile/work/vault-ledger\"}",
+      "prev_hash": "6ef9abc2870a9f26a40b11d86d1ad4131a0f23ece56db6f90c65d3ab96a7c500",
+      "hash": "860d439157faf4803cd3f77fa8346d08036626ba013711c9479a440aa8b479cc"
     },
     {
       "seq": 2,
-      "ts": "1795021497",
+      "ts": "1795134989",
       "op": "index_finished",
-      "payload": "{\"diagnostics\":473,\"edges\":1324,\"files_failed\":0,\"files_indexed\":50,\"nodes\":710}",
-      "prev_hash": "d79f29648aa892cc96e844ddde683bb2cdebce7f844d22c59ab471467fc20e98",
-      "hash": "ee216f8a3de09fff6239451deff1fa7a8706312e5deddb33b077841240ed1f75"
+      "payload": "{\"diagnostics\":508,\"edges\":1425,\"files_failed\":0,\"files_indexed\":57,\"nodes\":782}",
+      "prev_hash": "860d439157faf4803cd3f77fa8346d08036626ba013711c9479a440aa8b479cc",
+      "hash": "4371b7d41548d22327bd2e951a2092f39d7c1b3180c0b59127cf652eb50ad3fe"
     }
   ],
   "diagnostics": [
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+        "locations": [
+          {
+            "file": "ios/App/App/AppDelegate.swift",
+            "line": 9
+          },
+          {
+            "file": "ios/App/App/AppDelegate.swift",
+            "line": 36
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+        "locations": [
+          {
+            "file": "ios/App/App/AppDelegate.swift",
+            "line": 9
+          },
+          {
+            "file": "ios/App/App/AppDelegate.swift",
+            "line": 42
+          }
+        ]
+      }
+    },
     {
       "MultiDefinition": {
         "symbol": "@vault/ledger::scripts::bump-version.mjs::src",
@@ -19240,6 +20953,141 @@
           {
             "file": "scripts/bump-version.mjs",
             "line": 43
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::raw",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 17
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 19
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::raw",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 17
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 23
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::raw",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 17
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 24
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::raw",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 17
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 27
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::raw",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 17
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 29
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::is_tag",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 21
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 34
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::NAME",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 48
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 49
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::stamped",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 51
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 60
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "@vault/ledger::scripts::stamp-app-version::stamped",
+        "locations": [
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 51
+          },
+          {
+            "file": "scripts/stamp-app-version.sh",
+            "line": 77
           }
         ]
       }
@@ -19460,6 +21308,83 @@
     },
     {
       "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "cd",
+        "line": 8
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "codetopo",
+        "line": 14
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "dirname",
+        "line": 8
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "echo",
+        "line": 18
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "mkdir",
+        "line": 13
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "mktemp",
+        "line": 9
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "pwd",
+        "line": 8
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "python3",
+        "line": 11
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "set",
+        "line": 6
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "tar",
+        "line": 13
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::docs::codetopo-profile::refresh",
+        "target": "true",
+        "line": 16
+      }
+    },
+    {
+      "UnresolvedCall": {
         "from": "@vault/ledger::electron::main.cjs",
         "target": "BrowserWindow.getAllWindows",
         "line": 36
@@ -19551,6 +21476,13 @@
     },
     {
       "UnresolvedCall": {
+        "from": "@vault/ledger::ios::App::App::AppDelegate::AppDelegate::application",
+        "target": "ApplicationDelegateProxy.shared.application",
+        "line": 39
+      }
+    },
+    {
+      "UnresolvedCall": {
         "from": "@vault/ledger::scripts::bump-version.mjs",
         "target": "/^\\d+\\.\\d+\\.\\d+$/.test",
         "line": 6
@@ -19631,6 +21563,62 @@
         "from": "@vault/ledger::scripts::bump-version.mjs::today",
         "target": "new Date().toISOString",
         "line": 40
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "/usr/libexec/PlistBuddy",
+        "line": 67
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "exit",
+        "line": 32
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "grep",
+        "line": 37
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "node",
+        "line": 27
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "perl",
+        "line": 73
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "printf",
+        "line": 37
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "sed",
+        "line": 56
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "@vault/ledger::scripts::stamp-app-version",
+        "target": "tr",
+        "line": 29
       }
     },
     {
@@ -22571,6 +24559,34 @@
         "from": "@vault/ledger::vite.config",
         "target": "tailwindcss",
         "line": 12
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+        "target": "assertEquals",
+        "line": 24
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+        "target": "getInstrumentation",
+        "line": 22
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+        "target": "getPackageName",
+        "line": 24
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "com::getcapacitor::myapp::ExampleInstrumentedTest::ExampleInstrumentedTest::useAppContext",
+        "target": "getTargetContext",
+        "line": 22
       }
     }
   ]
